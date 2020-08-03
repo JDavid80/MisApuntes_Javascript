@@ -1,0 +1,14 @@
+img {
+    display: block;
+    margin-bottom: 1em;
+}
+h1.mensaje {
+    background-color: darkcyan;
+    color: whitesmoke;
+}
+a {
+    font-size: 1.5em;
+}
+div {
+    width: 50%;
+}
