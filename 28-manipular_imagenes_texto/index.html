@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipular Imagenes y Texto</title>
+    <script src="js/script.js"></script>
+  <!--   <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+    <h3>Al dar click sobre la siguiente imagen, llamamos una función para desaparecerla.</h3>
+    <img id="templo" src="img/templo.jpg" onclick="hacer_invisible();">
+    <h3>Intercambiando imagenes haciendo mouseover</h3>
+    <img id="kioto-pic1" src="img/kioto1.jpg" onmouseover="intercambiar();">
+    <h3>Intercambiando imagenes con mouseover utilizando parametros</h3>
+    <img id="kioto-pic2" src="img/kioto3.jpg" onmouseover="interConArg(id, 'img/kioto4.jpg')">
+</body>
+</html>

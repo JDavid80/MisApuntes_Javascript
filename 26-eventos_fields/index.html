@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    Nombre:<br>
+    <input class="tam-fuente" type="text" size="30" 
+    onFocus="this.style.backgroundColor='whitesmoke'"
+    onBlur="this.style.backgroundColor='white'">
+    <br>
+    <h3>Validando si el usuario ingreso información:</h3>
+    <form onSubmit="validarInfo('numeroDocumento');">
+        Numero de Documento:
+        <input type="text" id="numeroDocumento">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <h3>Llenando campos de forma automática</h3>
+    <form>
+        Código Dane:
+        <input type="text" id="codigo" onblur="buscarCiudad();">
+        Ciudad:
+        <input type="text" id="ciudad">
+    </form>
+</body>
+</html>

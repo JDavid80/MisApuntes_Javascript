@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <script>
+        llamarHora();
+        saludo("Hola. Llamando la función Saludo.");
+        presentacion("David Calderón", 39);
+        calcDescuento(15000);
+    </script>
+    <div>
+        <form>
+            <input type="button" onclick="llamarHora()"
+            value="Mostrar Hora">
+            <input type="button" 
+            onclick="saludo('Bienvenido a javascript')"
+            value="Mostrar Saludo">
+            <input type="button"
+            onclick="presentacion('David', 39)"
+            value="Presentación">
+            <input type="button"
+            onclick="calcDescuento(10000)"
+            value="Calcular Descuento">
+        </form>
+    </div>
+</body>
+</html>

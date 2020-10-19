@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <title>Configurando Estilos</title>
+</head>
+<body>
+    <h1>Configurando estilos desde Javascript</h1>    
+    <p id="parrafo-principal" onmouseover="fuente_grande();">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel totam ipsam, quam non veniam quia corporis, ex vero dignissimos repudiandae rerum consequatur id magni obcaecati deserunt ut exercitationem consectetur.
+    </p>
+    <h3>La siguiente imagen se desaparece al pasar el mouse sobre ella</h3>
+    <img id="londres" src="img/londres.jpg" onmouseover="img_invisible();"><br>
+    <h3>La siguiente imagen se mueve un poco por la configuración de margenes</h3>
+    <img id="venecia" src="img/venecia.jpg" onmouseover="conf_margenes();">
+    <h3>la siguiente imagen flota a la derecha al pasar el mouse sobre ella</h3>
+    <img id="paris" src="img/paris.jpg" onmouseover="flotar_derecha();"><br>
+</body>
+</html>

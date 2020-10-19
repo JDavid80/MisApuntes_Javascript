@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h1>Mouse Over</h1>
+        <p>Al pasar el mouse por la siguiente imagen, esta cambia automáticamente</p>
+        <img src="img/Bosque_Small.jpg" onmouseover="src='img/Costa_Small.jpg'" 
+        onmouseout="src='img/Bosque_Small.jpg'">
+        <br>
+        <p>Al pasar el mouse por la siguiente imagen, se muestra un mensaje</p>
+        <img src="img/Mexico_Small.jpg" onMouseOver="alert('Bienvenidos a México!')">
+        <br>
+        <p>Al pasar el mouse por el enlace, este cambia de color</p>
+        <a href="index.html" onMouseover="this.style.color='green';" onMouseout="this.style.color='purple';">Actualizar</a>
+        <br>
+        <p>Al pasar el mouse por el mensaje se mostrara una ventana emergente.</p>
+        <h1 class="mensaje" onmouseover="alert('Saludo')">Hola Mundo</h1>
+    </div>
+</body>
+</html>

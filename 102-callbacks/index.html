@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Sin callback */
+        /* function function1() {
+            setTimeout(function() {
+                console.log("Esta es la función N. 1 y se ejecuta primero");
+            },1000);
+        }
+        function function2() {
+            console.log("Esta es la función N. 2 y se deberia ejecutar despues de la primera");
+        }
+        function1();
+        function2(); */
+
+        /* Con Callback */
+        function function1(fn) {
+            setTimeout(function() {
+                console.log("Esta es la función N. 1 y se ejecuta primero");
+                fn();
+            },1000);
+        }
+        function function2() {
+            console.log("Esta es la función N. 2 y se deberia ejecutar despues de la primera");
+        }
+        function1(function2);
+    </script>
+</body>
+</html>

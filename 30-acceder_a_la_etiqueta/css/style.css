@@ -1,0 +1,10 @@
+div {
+    float: left;
+    width: 48%;
+    background-color: rgb(240,240,240);
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+h3 {
+    text-align: center;
+}
